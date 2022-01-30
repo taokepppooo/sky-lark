@@ -68,5 +68,11 @@
     "value-list-max-empty-lines": null,
     "font-family-no-missing-generic-family-keyword": null,
     "declaration-empty-line-before": null
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
+  ]
 }
