@@ -1,0 +1,17 @@
+{
+  "header": "CHANGELOG",
+  "types": [
+    {"type": "chore", "hidden": true},
+    {"type": "ci", "hidden": true},
+    {"type": "docs", "hidden": true},
+    {"type": "feat", "section": "Features"},
+    {"type": "fix", "section": "Bug Fixes"},
+    {"type": "merge", "hidden": true},
+    {"type": "perf", "hidden": true},
+    {"type": "refactor", "hidden": true},
+    {"type": "release", "hidden": true},
+    {"type": "style", "hidden": true},
+    {"type": "test", "hidden": true},
+    {"type": "revert", "hidden": true}
+  ]
+}

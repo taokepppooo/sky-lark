@@ -1,0 +1,72 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-rational-order",
+    "stylelint-config-prettier",
+    "stylelint-config-recommended"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "customSyntax": "postcss-html",
+  "rules": {
+    "order/order": [
+      [
+        "dollar-variables",
+        "custom-properties",
+        "at-rules",
+        "declarations",
+        {
+          "type": "at-rule",
+          "name": "supports"
+        },
+        {
+          "type": "at-rule",
+          "name": "media"
+        },
+        "rules"
+      ],
+      { "severity": "warning" }
+    ],
+    "scss/at-rule-no-unknown": true,
+    "scss/selector-no-redundant-nesting-selector": true,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["extends"]
+      }
+    ],
+    "block-no-empty": null,
+    "unit-allowed-list": ["em", "rem", "s", "px"],
+    "custom-property-no-missing-var-function": null,
+    "order/properties-order": ["width", "height"],
+    "plugin/rational-order": [
+      true,
+      {
+        "border-in-box-model": false,
+        "empty-line-between-groups": false
+      }
+    ],
+    "no-invalid-double-slash-comments": null,
+    "no-descending-specificity": null,
+    "comment-empty-line-before": null,
+    "function-comma-newline-after": null,
+    "function-parentheses-newline-inside": null,
+    "function-max-empty-lines": null,
+    "function-whitespace-after": null,
+    "function-name-case": null,
+    "indentation": null,
+    "number-leading-zero": null,
+    "number-no-trailing-zeros": null,
+    "rule-empty-line-before": null,
+    "selector-combinator-space-after": null,
+    "selector-list-comma-newline-after": null,
+    "selector-pseudo-element-colon-notation": null,
+    "unit-no-unknown": null,
+    "value-list-max-empty-lines": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "declaration-empty-line-before": null
+  }
+}
