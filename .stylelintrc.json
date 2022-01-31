@@ -6,9 +6,9 @@
     "stylelint-config-recommended"
   ],
   "plugins": [
-    "stylelint-scss",
     "stylelint-order",
-    "stylelint-config-rational-order/plugin"
+    "stylelint-config-rational-order/plugin",
+    "stylelint-scss"
   ],
   "customSyntax": "postcss-html",
   "rules": {

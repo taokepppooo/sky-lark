@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-21 15:21:51
  * @LastEditors: taoke
- * @LastEditTime: 2022-01-29 12:06:52
+ * @LastEditTime: 2022-01-31 19:49:38
  * @Description:
  * @FilePath: \sky-lark\.eslintrc.js
  */
@@ -95,7 +95,7 @@ module.exports = {
             position: 'before',
           },
           {
-            pattern: '@element-plus/**',
+            pattern: '@/**',
             group: 'internal',
           },
         ],

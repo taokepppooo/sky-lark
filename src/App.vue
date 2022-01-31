@@ -2,17 +2,21 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-01-31 00:02:29
+ * @LastEditTime: 2022-01-31 20:43:16
  * @Description:
  * @FilePath: \sky-lark\src\App.vue
 -->
-<script setup lang="ts"></script>
-
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
+<script setup lang="ts"></script>
+
 <style lang="scss">
+@import './styles/common/common.scss';
+
 #app {
   margin-top: 60px;
   color: #2c3e50;
