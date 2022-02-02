@@ -1,9 +1,9 @@
+@use '/@/styles/mixins/mixins' as *;
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
-  width: 100px;
-  height: 100px;
   margin: 0;
   padding: 0;
 }

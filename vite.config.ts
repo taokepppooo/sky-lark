@@ -2,20 +2,23 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-01-31 19:47:29
+ * @LastEditTime: 2022-02-01 23:43:48
  * @Description:
  * @FilePath: \sky-lark\vite.config.ts
  */
-import path from 'path'
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
+    alias: [
+      {
+        find: /\/@\//,
+        replacement: `${resolve('src')}/`,
+      },
+    ],
   },
   server: {
     port: 8080,

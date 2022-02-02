@@ -5,7 +5,13 @@
     "source.fixAll": true
   },
   "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass"],
+  "stylelint.disableErrorMessage": true,
+  "stylelint.enable": true,
+  "stylelint.useLocal": true,
+  "stylelint.configFile": ".stylelintrc.json",
+  "stylelint.packageManager": "pnpm",
   "npm.packageManager": "pnpm",
+  "eslint.packageManager": "pnpm",
   "eslint.probe": [
     "javascript",
     "javascriptreact",
