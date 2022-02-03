@@ -9,8 +9,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build:pro": "vite build --mode production",
-    "build:pub": "vite build --mode pubproduction",
+    "build:prod": "vite build --mode production",
+    "build:pubprod": "vite build --mode pubproduction",
     "build:dev": "vite build --mode development",
     "build:test": "vite build --mode test",
     "format": "prettier . --write",
