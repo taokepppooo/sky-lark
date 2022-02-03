@@ -46,6 +46,7 @@ specifiers:
   sucrase: ^3.20.3
   ts-jest: ^27.1.3
   typescript: ^4.5.5
+  unplugin-auto-import: ^0.5.11
   unplugin-vue-components: ^0.17.15
   vite: ^2.7.13
   vue: ^3.2.27
@@ -105,6 +106,7 @@ devDependencies:
   sucrase: registry.npmmirror.com/sucrase/3.20.3
   ts-jest: registry.npmmirror.com/ts-jest/27.1.3_1b27775f39f62aa5f7f17197b5e24a82
   typescript: registry.npmmirror.com/typescript/4.5.5
+  unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.5.11_vite@2.7.13
   unplugin-vue-components: registry.npmmirror.com/unplugin-vue-components/0.17.15_vite@2.7.13+vue@3.2.27
   vite: registry.npmmirror.com/vite/2.7.13_sass@1.49.7
   vue-jest: registry.npmmirror.com/vue-jest/3.0.7_c05388d0326bbf54a0d9cb96576fbf3b
@@ -10122,6 +10124,31 @@ packages:
     name: universalify
     version: 2.0.0
     engines: {node: '>= 10.0.0'}
+    dev: true
+
+  registry.npmmirror.com/unplugin-auto-import/0.5.11_vite@2.7.13:
+    resolution: {integrity: sha512-MJ3POLe/IysRHF4yd32FkKDoxqSRoiuIHm89ys67B8FLuz2Pvh9poeqTVe6IhJsNxwv0+GSdFfj5Dpq24lhm4g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/unplugin-auto-import/-/unplugin-auto-import-0.5.11.tgz}
+    id: registry.npmmirror.com/unplugin-auto-import/0.5.11
+    name: unplugin-auto-import
+    version: 0.5.11
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@vueuse/core': '*'
+    peerDependenciesMeta:
+      '@vueuse/core':
+        optional: true
+    dependencies:
+      '@antfu/utils': registry.npmmirror.com/@antfu/utils/0.4.0
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.1.2
+      local-pkg: registry.npmmirror.com/local-pkg/0.4.1
+      magic-string: registry.npmmirror.com/magic-string/0.25.7
+      resolve: registry.npmmirror.com/resolve/1.21.0
+      unplugin: registry.npmmirror.com/unplugin/0.3.2_vite@2.7.13
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - vite
+      - webpack
     dev: true
 
   registry.npmmirror.com/unplugin-vue-components/0.17.15_vite@2.7.13+vue@3.2.27:

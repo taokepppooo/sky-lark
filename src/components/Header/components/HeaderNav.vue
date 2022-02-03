@@ -2,9 +2,9 @@
  * @Author: taoke
  * @Date: 2022-02-02 17:06:24
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-02 20:25:23
+ * @LastEditTime: 2022-02-03 10:14:54
  * @Description:
- * @FilePath: \sky-lark\src\components\Header\components\HeaderNav.vue
+ * @FilePath: \sky-lark\src\components\header\components\HeaderNav.vue
 -->
 <template>
   <el-menu :default-active="activeIndex" mode="horizontal">
@@ -27,6 +27,5 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 const activeIndex = ref('1')
 </script>

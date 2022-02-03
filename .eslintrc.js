@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-21 15:21:51
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-02 20:52:40
+ * @LastEditTime: 2022-02-03 10:21:18
  * @Description:
  * @FilePath: \sky-lark\.eslintrc.js
  */
@@ -17,6 +17,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'prettier',
+    './.eslintrc-auto-import.json',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
