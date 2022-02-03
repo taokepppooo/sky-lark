@@ -1,3 +1,11 @@
+/*
+ * @Author: taoke
+ * @Date: 2022-01-30 23:13:40
+ * @LastEditors: taoke
+ * @LastEditTime: 2022-02-03 22:56:13
+ * @Description:
+ * @FilePath: \sky-lark\src\env.d.ts
+ */
 /// <reference types="vite/client" />
 
 declare module '*.vue' {
