@@ -1,4 +1,6 @@
 CHANGELOG
+### [0.0.10](https://github.com/taokepppooo/sky-lark/compare/v0.0.9...v0.0.10) (2022-02-03)
+
 ### [0.0.9](https://github.com/taokepppooo/sky-lark/compare/v0.0.8...v0.0.9) (2022-02-03)
 
 ### [0.0.8](https://github.com/taokepppooo/sky-lark/compare/v0.0.7...v0.0.8) (2022-02-03)
