@@ -31,5 +31,6 @@
     "vue",
     "markdown"
   ],
-  "vite.devCommand": "pnpm run dev -- --"
+  "vite.devCommand": "pnpm run dev -- --",
+  "markdownlint.customRules": [".markdownlint.json"]
 }
