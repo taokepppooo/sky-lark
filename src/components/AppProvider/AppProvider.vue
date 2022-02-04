@@ -2,9 +2,9 @@
  * @Author: taoke
  * @Date: 2022-02-01 12:56:14
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-03 09:25:24
+ * @LastEditTime: 2022-02-04 18:00:25
  * @Description: 页面结构
- * @FilePath: \sky-lark\src\components\AppProvider\src\AppProvider.vue
+ * @FilePath: \sky-lark\src\components\AppProvider\AppProvider.vue
 -->
 <template>
   <div class="common-layout">
@@ -18,6 +18,9 @@
 </template>
 
 <script setup lang="ts">
-import { SlHeader } from '/@/components/header'
-import { SlMain } from '/@/components/main'
+import SlHeader from '/@/components/Header/Headerv.vue'
+import SlMain from '/@/components/Main/Mainv.vue'
 </script>
+<style scoped lang="scss">
+@use './style/index.scss';
+</style>

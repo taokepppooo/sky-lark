@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-30 23:13:40
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-03 22:56:13
+ * @LastEditTime: 2022-02-04 18:07:37
  * @Description:
  * @FilePath: \sky-lark\src\env.d.ts
  */

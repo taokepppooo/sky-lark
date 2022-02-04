@@ -13,7 +13,6 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.10.2
   '@typescript-eslint/parser': ^5.10.2
   '@vitejs/plugin-vue': ^2.1.0
-  '@vue/compiler-sfc': ^3.2.29
   babel-core: ^6.26.3
   commitizen: ^4.2.4
   cypress: ^9.4.1
@@ -81,7 +80,6 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.10.2_2595c2126aec4d4b6e944b931dabb4c2
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.10.2_eslint@8.8.0+typescript@4.5.5
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.1.0_vite@2.7.13+vue@3.2.29
-  '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.2.29
   babel-core: registry.npmmirror.com/babel-core/6.26.3
   commitizen: registry.npmmirror.com/commitizen/4.2.4_@types+node@17.0.14
   cypress: registry.npmmirror.com/cypress/9.4.1
@@ -3263,6 +3261,7 @@ packages:
       magic-string: registry.npmmirror.com/magic-string/0.25.7
       postcss: registry.npmmirror.com/postcss/8.4.6
       source-map: registry.npmmirror.com/source-map/0.6.1
+    dev: false
 
   registry.npmmirror.com/@vue/compiler-ssr/3.2.29:
     resolution: {integrity: sha512-LrvQwXlx66uWsB9/VydaaqEpae9xtmlUkeSKF6aPDbzx8M1h7ukxaPjNCAXuFd3fUHblcri8k42lfimHfzMICA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/compiler-ssr/-/compiler-ssr-3.2.29.tgz}
@@ -3271,6 +3270,7 @@ packages:
     dependencies:
       '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom/3.2.29
       '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.29
+    dev: false
 
   registry.npmmirror.com/@vue/devtools-api/6.0.0-beta.21.1:
     resolution: {integrity: sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.21.1.tgz}
@@ -3287,6 +3287,7 @@ packages:
       '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.29
       estree-walker: registry.npmmirror.com/estree-walker/2.0.2
       magic-string: registry.npmmirror.com/magic-string/0.25.7
+    dev: false
 
   registry.npmmirror.com/@vue/reactivity/3.2.29:
     resolution: {integrity: sha512-Ryhb6Gy62YolKXH1gv42pEqwx7zs3n8gacRVZICSgjQz8Qr8QeCcFygBKYfJm3o1SccR7U+bVBQDWZGOyG1k4g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.2.29.tgz}

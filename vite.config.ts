@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-04 13:27:53
+ * @LastEditTime: 2022-02-04 17:10:30
  * @Description:
  * @FilePath: \sky-lark\vite.config.ts
  */
@@ -31,7 +31,7 @@ export default ({ mode }) => {
           filepath: './.eslintrc-auto-import.json',
           globalsPropValue: true,
         },
-        dts: './auto-imports.d.ts',
+        dts: 'src/auto-imports.d.ts',
       }),
       Components({
         resolvers: ElementPlusResolver({ importStyle: 'sass' }),
