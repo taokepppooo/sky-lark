@@ -18,8 +18,8 @@
 </template>
 
 <script setup lang="ts">
-import SlHeader from '/@/components/Header/Headerv.vue'
-import SlMain from '/@/components/Main/Mainv.vue'
+import SlHeader from '/@/components/Header/Header.vue'
+import SlMain from '/@/components/Main/Main.vue'
 </script>
 <style scoped lang="scss">
 @use './style/index.scss';

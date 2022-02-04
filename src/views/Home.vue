@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-31 18:40:30
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-04 18:00:33
+ * @LastEditTime: 2022-02-04 18:11:03
  * @Description:
  * @FilePath: \sky-lark\src\views\Home.vue
 -->
@@ -11,5 +11,5 @@
 </template>
 
 <script setup lang="ts">
-import AppProvider from '/@/components/AppProvider/AppProviderv.vue'
+import AppProvider from '/@/components/AppProvider/AppProvider.vue'
 </script>
