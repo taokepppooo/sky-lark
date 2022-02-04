@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-03 22:56:02
+ * @LastEditTime: 2022-02-04 13:27:53
  * @Description:
  * @FilePath: \sky-lark\vite.config.ts
  */
@@ -34,8 +34,8 @@ export default ({ mode }) => {
         dts: './auto-imports.d.ts',
       }),
       Components({
-        resolvers: ElementPlusResolver(),
-        dts: false,
+        resolvers: ElementPlusResolver({ importStyle: 'sass' }),
+        dts: 'src/components.d.ts',
       }),
     ],
     base: process.env.VITE_BASE_URL,

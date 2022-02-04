@@ -4,7 +4,7 @@
  * @LastEditors: taoke
  * @LastEditTime: 2022-02-03 09:25:24
  * @Description: 页面结构
- * @FilePath: \sky-lark\src\components\Application\src\AppProvider.vue
+ * @FilePath: \sky-lark\src\components\AppProvider\src\AppProvider.vue
 -->
 <template>
   <div class="common-layout">

@@ -2,9 +2,9 @@
  * @Author: taoke
  * @Date: 2022-02-01 12:57:41
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-03 09:25:57
+ * @LastEditTime: 2022-02-04 11:33:35
  * @Description: 页面结构
- * @FilePath: \sky-lark\src\components\Application\index.ts
+ * @FilePath: \sky-lark\src\components\AppProvider\index.ts
  */
 import { withNoopInstall } from '/@/utils/with-install'
 import appProvider from './src/AppProvider.vue'

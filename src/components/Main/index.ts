@@ -2,9 +2,9 @@
  * @Author: taoke
  * @Date: 2022-02-02 00:50:27
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-03 09:55:41
+ * @LastEditTime: 2022-02-04 11:12:41
  * @Description:
- * @FilePath: \sky-lark\src\components\Main\index.ts
+ * @FilePath: \sky-lark\src\components\main\index.ts
  */
 import { withNoopInstall } from '/@/utils/with-install'
 import Main from './src/Main.vue'
