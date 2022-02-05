@@ -12,7 +12,7 @@ declare module 'vue' {
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     Header: typeof import('./components/Header/Header.vue')['default']
-    HeaderNav: typeof import('./components/Header/components/HeaderNav.vue')['default']
+    HeaderNav: typeof import('./components/Header/modules/HeaderNav.vue')['default']
     Main: typeof import('./components/Main/Main.vue')['default']
   }
 }
