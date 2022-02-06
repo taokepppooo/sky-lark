@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-04 17:10:30
+ * @LastEditTime: 2022-02-06 20:51:00
  * @Description:
  * @FilePath: \sky-lark\vite.config.ts
  */
@@ -13,6 +13,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import dotenv from 'dotenv'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 function pathResolve(dir: string) {
   return resolve(process.cwd(), '.', dir)
@@ -36,6 +37,12 @@ export default ({ mode }) => {
       Components({
         resolvers: ElementPlusResolver({ importStyle: 'sass' }),
         dts: 'src/components.d.ts',
+      }),
+      visualizer({
+        filename: './node_modules/.cache/visualizer/stats.html',
+        open: true,
+        gzipSize: true,
+        brotliSize: true,
       }),
     ],
     base: process.env.VITE_BASE_URL,
