@@ -32,5 +32,8 @@
     "markdown"
   ],
   "vite.devCommand": "pnpm run dev -- --",
-  "markdownlint.customRules": [".markdownlint.json"]
+  "markdownlint.customRules": [".markdownlint.json"],
+  "vetur.format.enable": true,
+  "vetur.validation.style": true,
+  "vetur.validation.template": true
 }
