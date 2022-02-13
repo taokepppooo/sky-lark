@@ -1,6 +1,6 @@
 {
   "name": "sky-lark",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "packageManager": "pnpm@6.27.2",
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0",
@@ -22,7 +22,7 @@
     "lint:style:fix": "stylelint --fix \"src/**/*.{css,scss,vue}\"",
     "cz": "cz",
     "commit": "git add . && cz-customizable",
-    "release": "standard-version",
+    "release": "standard-version && git push origin main",
     "release:tags": "pnpm run release && git push --follow-tags origin main",
     "publish": "git push --follow-tags origin main",
     "vue-tsc": "vue-tsc --noEmit",
