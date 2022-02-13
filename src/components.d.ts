@@ -5,12 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     AppProvider: typeof import('./components/AppProvider/AppProvider.vue')['default']
-    ElContainer: typeof import('element-plus/es')['ElContainer']
-    ElHeader: typeof import('element-plus/es')['ElHeader']
-    ElMain: typeof import('element-plus/es')['ElMain']
-    ElMenu: typeof import('element-plus/es')['ElMenu']
-    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
-    ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     Header: typeof import('./components/Header/Header.vue')['default']
     HeaderNav: typeof import('./components/Header/modules/HeaderNav.vue')['default']
     Main: typeof import('./components/Main/Main.vue')['default']
