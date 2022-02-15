@@ -2,12 +2,14 @@
  * @Author: taoke
  * @Date: 2022-02-02 00:00:09
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-04 17:43:48
+ * @LastEditTime: 2022-02-15 21:59:06
  * @Description:
- * @FilePath: \sky-lark\src\components\Main\Index.vue
+ * @FilePath: \sky-lark\src\components\Main\Main.vue
 -->
 <template>
-  <el-main>main</el-main>
+  <el-main>
+    <router-view />
+  </el-main>
 </template>
 
 <script setup lang="ts"></script>

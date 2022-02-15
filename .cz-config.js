@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-22 19:00:37
  * @LastEditors: taoke
- * @LastEditTime: 2022-01-29 11:39:48
+ * @LastEditTime: 2022-02-15 22:19:33
  * @Description:
  * @FilePath: \sky-lark\.cz-config.js
  */
@@ -33,6 +33,7 @@ module.exports = {
   // scope 类型（定义之后，可通过上下键选择）
   scopes: [
     ['component', '组件相关'],
+    ['views', '页面'],
     ['配置文件', '配置文件'],
   ].map(([value, description]) => {
     return {

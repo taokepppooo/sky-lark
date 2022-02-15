@@ -2,12 +2,14 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-04 15:06:39
+ * @LastEditTime: 2022-02-15 22:10:44
  * @Description:
  * @FilePath: \sky-lark\src\App.vue
 -->
 <template>
-  <router-view />
+  <app-provider> </app-provider>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppProvider from '/@/components/AppProvider/AppProvider.vue'
+</script>
