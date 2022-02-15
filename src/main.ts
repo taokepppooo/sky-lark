@@ -2,20 +2,26 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-04 13:05:13
+ * @LastEditTime: 2022-02-14 14:37:59
  * @Description:
  * @FilePath: \sky-lark\src\main.ts
  */
 import { createApp } from 'vue'
+import BootstrapVue3 from 'bootstrap-vue-3'
 import App from './App.vue'
 import { router } from './router'
 import store from './store'
+
+// bootstrap
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 
 // 导入scss导入总文件
 import '/@/styles/src/index.scss'
 
 const app = createApp(App)
 app.use(router)
+app.use(BootstrapVue3)
 app.use(store)
 
 app.mount('#app')

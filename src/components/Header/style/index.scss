@@ -1,0 +1,22 @@
+$header-height: 56px;
+.el-header {
+  display: flex;
+  justify-content: space-between;
+  height: $header-height;
+  margin: 0 5%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  height: $header-height;
+}
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+.nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+}

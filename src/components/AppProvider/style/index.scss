@@ -1,5 +1,13 @@
-.container {
-  display: block;
+.common-layout .el-header {
+  color: var(--el-text-color-primary);
+  line-height: 60px;
+  text-align: center;
+}
+
+.common-layout .el-main {
+  color: var(--el-text-color-primary);
+  line-height: 160px;
+  text-align: center;
 }
 
 .common-layout > .el-container {

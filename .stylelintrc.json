@@ -13,6 +13,12 @@
   ],
   "customSyntax": "postcss-html",
   "rules": {
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["deep"]
+      }
+    ],
     "order/order": [
       [
         "dollar-variables",
@@ -35,7 +41,7 @@
     "scss/selector-no-redundant-nesting-selector": true,
     "at-rule-no-unknown": null,
     "block-no-empty": null,
-    "unit-allowed-list": ["em", "rem", "s", "px"],
+    "unit-allowed-list": ["em", "rem", "s", "px", "%"],
     "custom-property-no-missing-var-function": null,
     "order/properties-order": ["width", "height"],
     "plugin/rational-order": [
@@ -61,6 +67,7 @@
     "selector-combinator-space-after": null,
     "selector-list-comma-newline-after": null,
     "selector-pseudo-element-colon-notation": null,
+    "selector-class-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$|^Mui.*$",
     "unit-no-unknown": null,
     "value-list-max-empty-lines": null,
     "font-family-no-missing-generic-family-keyword": null,
