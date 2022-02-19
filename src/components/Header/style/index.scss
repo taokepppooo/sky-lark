@@ -4,6 +4,7 @@ $header-height: 56px;
   justify-content: space-between;
   height: $header-height;
   margin: 0 5%;
+  border-bottom: 0;
 }
 .logo {
   display: flex;

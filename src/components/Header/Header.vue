@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import HeaderNav from './modules/HeaderNav.vue'
+import HeaderNav from './modules/headerNav.vue'
 const url =
   'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'
 </script>

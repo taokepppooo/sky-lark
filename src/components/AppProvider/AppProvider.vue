@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-02-01 12:56:14
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-15 17:05:18
+ * @LastEditTime: 2022-02-18 09:39:13
  * @Description: 页面结构
  * @FilePath: \sky-lark\src\components\AppProvider\AppProvider.vue
 -->
@@ -14,8 +14,8 @@
 </template>
 
 <script setup lang="ts">
-import SlHeader from '/@/components/Header/Header.vue'
-import SlMain from '/@/components/Main/Main.vue'
+import SlHeader from '../header/header.vue'
+import SlMain from '../main/main.vue'
 </script>
 <style scoped lang="scss">
 @use './style/index.scss';

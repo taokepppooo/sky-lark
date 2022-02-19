@@ -1,5 +1,12 @@
 {
   "globals": {
-    "ref": "readonly"
+    "ref": "readonly",
+    "getCurrentInstance": "readonly",
+    "useRoute": "readonly",
+    "useRouter": "readonly",
+    "toRaw": "readonly",
+    "onMounted": "readonly",
+    "reactive": "readonly",
+    "computed": "readonly"
   }
 }

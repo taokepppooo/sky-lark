@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-06 20:51:00
+ * @LastEditTime: 2022-02-18 09:57:05
  * @Description:
  * @FilePath: \sky-lark\vite.config.ts
  */
@@ -26,7 +26,13 @@ export default ({ mode }) => {
       vue(),
       AutoImport({
         // global imports to register
-        imports: ['vue', 'vue-router'],
+        imports: [
+          'vue',
+          'vue-router',
+          'vue-i18n',
+          '@vueuse/head',
+          '@vueuse/core',
+        ],
         eslintrc: {
           enabled: false,
           filepath: './.eslintrc-auto-import.json',
@@ -36,6 +42,8 @@ export default ({ mode }) => {
       }),
       Components({
         resolvers: ElementPlusResolver({ importStyle: 'sass' }),
+        extensions: ['vue'],
+        include: [/\.vue$/, /\.vue\?vue/],
         dts: 'src/components.d.ts',
       }),
       visualizer({
