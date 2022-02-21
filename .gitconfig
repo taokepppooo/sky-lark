@@ -1,4 +1,0 @@
-http.proxy=127.0.0.1:19180
-https.proxy=127.0.0.1:19180
-http.sslVerify=true
-https.sslVerify=true
