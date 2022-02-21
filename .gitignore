@@ -3,3 +3,5 @@ node_modules
 dist
 test
 .env.*
+!.env.example
+deploy/index.ts

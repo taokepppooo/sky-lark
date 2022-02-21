@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-18 09:57:05
+ * @LastEditTime: 2022-02-21 15:23:41
  * @Description:
  * @FilePath: \sky-lark\vite.config.ts
  */
@@ -22,6 +22,23 @@ function pathResolve(dir: string) {
 export default ({ mode }) => {
   dotenv.config({ path: `./.env.${mode}` })
   return defineConfig({
+    // https://github.com/vitejs/vite/issues/5519
+    css: {
+      postcss: {
+        plugins: [
+          {
+            postcssPlugin: 'internal:charset-removal',
+            AtRule: {
+              charset: (atRule) => {
+                if (atRule.name === 'charset') {
+                  atRule.remove()
+                }
+              },
+            },
+          },
+        ],
+      },
+    },
     plugins: [
       vue(),
       AutoImport({
