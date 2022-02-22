@@ -1,6 +1,6 @@
 {
   "name": "sky-lark",
-  "version": "0.0.46",
+  "version": "0.0.47",
   "packageManager": "pnpm@6.27.2",
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0",
