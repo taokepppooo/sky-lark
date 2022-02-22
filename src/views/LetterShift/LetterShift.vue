@@ -2,9 +2,9 @@
  * @Author: taoke
  * @Date: 2022-02-15 22:08:23
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-19 17:44:31
+ * @LastEditTime: 2022-02-22 22:00:30
  * @Description:
- * @FilePath: \sky-lark\src\views\LetterShift\LetterShift.vue
+ * @FilePath: \sky-lark\src\views\letterShift\letterShift.vue
 -->
 <template>
   <div>
@@ -31,13 +31,27 @@
       <el-button @click="clear">清空</el-button>
     </el-row>
     <el-row class="button-row">
-      <el-button type="primary">空格转下划线</el-button>
-      <el-button type="primary">下划线转驼峰</el-button>
-      <el-button type="primary">驼峰转下划线</el-button>
-      <el-button type="primary">下划线转空格</el-button>
-      <el-button type="primary">下划线转中横线</el-button>
-      <el-button type="primary">中横线转下划线</el-button>
-      <el-button type="primary">小数点转下划线</el-button>
+      <el-button type="primary" @click="spaceConvertUnderline"
+        >空格转下划线</el-button
+      >
+      <el-button type="primary" @click="underlineConvertCamel"
+        >下划线转驼峰</el-button
+      >
+      <el-button type="primary" @click="camelConvertUnderline"
+        >驼峰转下划线</el-button
+      >
+      <el-button type="primary" @click="underlineConvertSpace"
+        >下划线转空格</el-button
+      >
+      <el-button type="primary" @click="underlineConvertHyphen"
+        >下划线转中横线</el-button
+      >
+      <el-button type="primary" @click="hyphenConvertUnderline"
+        >中横线转下划线</el-button
+      >
+      <el-button type="primary" @click="pointConvertUnderline"
+        >小数点转下划线</el-button
+      >
     </el-row>
     <div class="tip custom-block">
       <p class="custom-block-title">注意</p>
@@ -80,6 +94,36 @@ const upperRowFirstLetter = () => {
 }
 const clear = () => {
   state.convertContent = ''
+}
+const charConvertCommon = (front: RegExp, later: string | any) => {
+  state.convertContent = state.convertContent.replace(front, later)
+}
+const spaceConvertUnderline = () => {
+  charConvertCommon(/ /g, '_')
+}
+const underlineConvertCamel = () => {
+  const str: string[] = state.convertContent.split('_')
+  let result: string = str[0]
+  for (let i = 1; i < str.length; i++) {
+    result = result + str[i].slice(0, 1).toUpperCase() + str[i].slice(1)
+  }
+  state.convertContent = result
+}
+const camelConvertUnderline = () => {
+  charConvertCommon(/([A-Z])/g, '_$1')
+  state.convertContent = state.convertContent.toLowerCase()
+}
+const underlineConvertSpace = () => {
+  charConvertCommon(/_/g, ' ')
+}
+const underlineConvertHyphen = () => {
+  charConvertCommon(/_/g, '-')
+}
+const hyphenConvertUnderline = () => {
+  charConvertCommon(/-/g, '_')
+}
+const pointConvertUnderline = () => {
+  charConvertCommon(/\./g, '_')
 }
 </script>
 <style scoped lang="scss">
