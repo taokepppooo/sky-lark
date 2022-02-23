@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-02-15 22:08:23
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-22 22:00:30
+ * @LastEditTime: 2022-02-23 11:51:54
  * @Description:
  * @FilePath: \sky-lark\src\views\letterShift\letterShift.vue
 -->
@@ -110,7 +110,7 @@ const underlineConvertCamel = () => {
   state.convertContent = result
 }
 const camelConvertUnderline = () => {
-  charConvertCommon(/([A-Z])/g, '_$1')
+  charConvertCommon(/\B([A-Z])/g, '_$1')
   state.convertContent = state.convertContent.toLowerCase()
 }
 const underlineConvertSpace = () => {
