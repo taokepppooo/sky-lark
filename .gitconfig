@@ -1,9 +1,3 @@
-* text=auto eol=lf
-*.ts linguist-detectable=false
-*.css linguist-detectable=false
-*.scss linguist-detectable=false
-*.js linguist-detectable=true
-*.vue linguist-detectable=true
 http.proxy=127.0.0.1:19180
 http.sslVerify=false
 https.proxy=127.0.0.1:19180
