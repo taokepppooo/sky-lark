@@ -4,5 +4,9 @@
 *.scss linguist-detectable=false
 *.js linguist-detectable=true
 *.vue linguist-detectable=true
-http.proxy=127.0.0.1:19180
-https.proxy=127.0.0.1:19180
+[http "https://github.com"]
+	proxy = socks5://127.0.0.1:19181
+	sslVerify = false
+[https "https://github.com"]
+	proxy = socks5://127.0.0.1:19181
+	sslVerify = false
