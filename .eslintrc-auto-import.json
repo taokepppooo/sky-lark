@@ -7,6 +7,7 @@
     "toRaw": "readonly",
     "onMounted": "readonly",
     "reactive": "readonly",
-    "computed": "readonly"
+    "computed": "readonly",
+    "ElMessage": "readonly"
   }
 }

@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-21 14:31:48
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-21 15:23:41
+ * @LastEditTime: 2022-02-23 23:18:38
  * @Description:
  * @FilePath: \sky-lark\vite.config.ts
  */
@@ -55,10 +55,13 @@ export default ({ mode }) => {
           filepath: './.eslintrc-auto-import.json',
           globalsPropValue: true,
         },
+        // Auto import functions from Element Plus, e.g. ElMessage, ElMessageBox... (with style)
+        // 自动导入 Element Plus 相关函数，如：ElMessage, ElMessageBox... (带样式)
+        resolvers: [ElementPlusResolver({ importStyle: 'sass' })],
         dts: 'src/auto-imports.d.ts',
       }),
       Components({
-        resolvers: ElementPlusResolver({ importStyle: 'sass' }),
+        resolvers: [ElementPlusResolver({ importStyle: 'sass' })],
         extensions: ['vue'],
         include: [/\.vue$/, /\.vue\?vue/],
         dts: 'src/components.d.ts',
