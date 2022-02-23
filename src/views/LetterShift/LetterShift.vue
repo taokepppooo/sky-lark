@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-02-15 22:08:23
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-23 21:11:04
+ * @LastEditTime: 2022-02-23 21:30:05
  * @Description:
  * @FilePath: \sky-lark\src\views\letterShift\letterShift.vue
 -->
@@ -54,7 +54,7 @@
       >
     </el-row>
     <el-row class="button-row custom-convert" :gutter="24">
-      <el-col :span="2">
+      <el-col :span="2" class="head-col">
         <el-input v-model="state.preConvert"> </el-input
       ></el-col>
       <span>转换为</span>
