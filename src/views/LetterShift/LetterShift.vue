@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-02-15 22:08:23
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-23 11:51:54
+ * @LastEditTime: 2022-02-23 21:11:04
  * @Description:
  * @FilePath: \sky-lark\src\views\letterShift\letterShift.vue
 -->
@@ -16,7 +16,7 @@
       show-word-limit
       type="textarea"
     />
-    <el-row class="button-row">
+    <el-row class="button-row" :gutter="24">
       <el-button type="primary" @click="upperCase">全大写</el-button>
       <el-button type="primary" @click="lowerCase">全小写</el-button>
       <el-button type="primary" @click="textTransformcapitalize"
@@ -30,7 +30,7 @@
       >
       <el-button @click="clear">清空</el-button>
     </el-row>
-    <el-row class="button-row">
+    <el-row class="button-row" :gutter="24">
       <el-button type="primary" @click="spaceConvertUnderline"
         >空格转下划线</el-button
       >
@@ -53,6 +53,16 @@
         >小数点转下划线</el-button
       >
     </el-row>
+    <el-row class="button-row custom-convert" :gutter="24">
+      <el-col :span="2">
+        <el-input v-model="state.preConvert"> </el-input
+      ></el-col>
+      <span>转换为</span>
+      <el-col :span="2">
+        <el-input v-model="state.suffixConvert"> </el-input
+      ></el-col>
+      <el-button type="primary" @click="customConvert">自定义转换</el-button>
+    </el-row>
     <div class="tip custom-block">
       <p class="custom-block-title">注意</p>
       <p>首字母转大写仅在英文单词前有空格的情况下才有效；</p>
@@ -63,6 +73,8 @@
 <script setup lang="ts">
 const state = reactive({
   convertContent: '',
+  preConvert: '',
+  suffixConvert: '',
 })
 const upperCase = () => {
   state.convertContent = state.convertContent.toUpperCase()
@@ -125,23 +137,13 @@ const hyphenConvertUnderline = () => {
 const pointConvertUnderline = () => {
   charConvertCommon(/\./g, '_')
 }
+const customConvert = () => {
+  charConvertCommon(
+    new RegExp(`\\${state.preConvert}`, 'g'),
+    state.suffixConvert
+  )
+}
 </script>
 <style scoped lang="scss">
 @use './style/index.scss';
-.custom-block.tip {
-  margin: 20px 0;
-  padding: 8px 16px;
-  background-color: var(--el-color-primary-light-9);
-  border-left: 5px solid var(--el-color-primary);
-  border-radius: 4px;
-}
-.custom-block .custom-block-title {
-  font-weight: 700;
-}
-p,
-ol,
-ul {
-  margin: 1rem 0;
-  line-height: 1.7;
-}
 </style>
