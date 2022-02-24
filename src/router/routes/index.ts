@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-01-31 19:06:32
  * @LastEditors: taoke
- * @LastEditTime: 2022-02-23 21:59:32
+ * @LastEditTime: 2022-02-24 08:33:00
  * @Description:
  * @FilePath: \sky-lark\src\router\routes\index.ts
  */
@@ -38,7 +38,7 @@ export const basicRoutes = [
         path: '/parse-url',
         name: 'parse-url',
         meta: {
-          title: '地址解析',
+          title: '浏览器地址解析',
         },
         component: () => import('/@/views/parseUrl/parseUrl.vue'),
       },
